@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Creación del Render Tree -->
+    <link rel="stylesheet" href="styles/reset.css"> <!-- Importación de estilos reseteados con IA -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Importación de estilos de css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> <!-- Fuentes importadas de Google Fonts -->
+    <title>Marcos.dev</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="nomb">Marcos.dev</a>
+            <nav>
+                <a href="#sobre-mi">Sobre mi</a>
+                <a href="#tecnologias">Tecnologías</a>
+                <a href="#actividades">Actividades</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Seccion Hero -->
+        <section id="hero">
+            <h1>/ Marcos Lombardo /</h1>
+            <h3>Full Stack Developer (en breve)</h3>
+        </section>
+
+        <!-- Fondo espacial -->
+        <div class="fondo">
+
+            <!-- Seccion Sobre mi -->
+            <section id="sobre-mi">
+                <div class="container">
+                    <div class="texto">
+                        <h2>Sobre mi</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nostrum recusandae velit quasi laborum voluptas magni amet. Officiis sint tempora, itaque ipsa temporibus sapiente aut suscipit, error dignissimos quia voluptatem.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seccion tecnologias favoritas -->
+            <section id="tecnologias">
+                <div class="container">
+                    <h2>Tecnologías Favoritas</h2>
+                    <div class="programas">
+                        <div class="cards">
+                            <h3 class="subtitle">HTML</h3>
+                            <img src="assets/img/html.png" alt="html" class="logo">
+                        </div>
+                        <div class="cards">
+                            <h3 class="subtitle">CSS</h3>
+                            <img src="assets/img/css.png" alt="css" class="logo">
+                        </div>
+                        <div class="cards">
+                            <h3 class="subtitle">JavaScript</h3>
+                            <img src="assets/img/js.png" alt="js" class="logo">
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seccion actividades favoritas -->
+            <section id="actividades">
+                <div class="container">
+                    <h2>Subir Nueva Actividad</h2>
+                    <form action="#" id="activity-form">
+                        <div class="form-group">
+                            <label for="titulo">Título:</label>
+                            <input type="text" id="title" name="titulo" placeholder="Ingrese el título" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion">Descripción:</label>
+                            <textarea id="description" name="descripcion" placeholder="Ingrese una descripción" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="imagen">URL de la Imagen:</label>
+                            <input type="url" id="imgurl" name="imagen" placeholder="Ingrese la URL de la imagen" required>
+                        </div>
+                        <button id="presionar" type="submit">Subir Actividad</button>
+                    </form>
+                </div>
+                <div class="actfav-cont">
+                    <h2>Actividades Favoritas</h2>
+                    <div id="contenedor-actividades">
+                    <!-- Acá se renderizan las tarjetas -->
+                    </div>
+                </div>
+            </section>
+
+        </div>  
+
+    </main>    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Marcos.dev 2024</p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

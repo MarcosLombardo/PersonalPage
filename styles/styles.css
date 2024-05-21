@@ -1,0 +1,527 @@
+/* Estilos generales */
+
+html{
+    scroll-behavior: smooth;
+} /* Para que corra mas diámico el scroll de la página */
+
+body{
+    font-family: 'Roboto', sans-serif;
+} /* Estilos generales del body */
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}     /* Tamaños de letras generales */
+a{ font-size: 1.4em;}     
+p{ font-size: 1.25em;}
+
+.container{
+    max-width: 1400px; /*Ancho máximo para la clase container */
+    margin: auto; /* Margen automatico para el contenedor */
+} /* Contenedor general */
+
+
+/* Header */
+
+header{
+    background-color: #e7ecef;
+} /* estilo del fondo del header */
+
+header .nomb{
+    margin: 0; /* No tiene márgenes */
+    padding: 25px 30px; /* 25 de padding arriba y abajo, 30 de padding a la izquierda y derecha */
+    font-weight: bold;
+    color: #001f54;
+    font-size: 1.8em;
+} /* Estilo del Marcos.dev */
+
+header .nomb:hover {
+    color: #001f54; /* Mantener el mismo color al pasar el cursor */
+} /* Estilo del hover con la class .nomb */
+
+header .container{
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* En dirección de columnas */
+    align-items: center;
+} /* Estilo del contenedor del header */
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; /* padding abajo de 25 */
+} /* Estilos del nav general del header */
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #001f54;
+} /* Estilos de los enlaces del header */
+
+header a:hover{
+    color: #1282a2;
+} /* Estilos del hover de los enlaces del header */
+
+
+
+/* Hero */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro del contenedor */
+    text-align: center;
+    flex-direction: column;
+    height: 80vh; /* 80% de la altura del viewport */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/hero.jpg"); /* Define un degradado lineal en una imágen de fondo */
+    background-repeat: no-repeat; /* La imágen no se repetirá en ninguna dirección */
+    background-size: cover; /* Cubre el contendor con la imágen sin deformarla */
+    background-position: center center; /* La imágen se posicionará tanto vertical como horizontalmente */
+} /* Estilo del hero principal */
+
+#hero h1,h3{
+    color: white;
+} /* Colores de texto dentro del hero */
+
+
+
+/* Fondo */
+
+.fondo {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url("/assets/img/fondo.jpeg"); /* Define un degradado lineal en una imágen de fondo */
+} /* Fondo de universo */
+
+
+
+/* Sobre mi */
+
+#sobre-mi .container{
+    text-align: center;
+    padding: 60px 12px;
+} /* Estilos del contenedor sobre mi */
+
+#sobre-mi .texto{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+
+/* Tecnologías Favoritas */
+
+#tecnologias{
+    width: 95vw;
+    background-color: rgb(30,30,30);
+    margin: auto;
+    border-radius: 20px;    
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+} /* Estilo del contenedor de las tecnologias favoritas */
+
+#tecnologias .programas {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan a la siguiente línea */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    padding: 1em; /* Ajustar el relleno alrededor del contenedor de tarjetas */
+    gap: 1em; /* Agregar espacio entre las tarjetas */
+} /* Estilo del contenedor de las cards y los textos */
+
+#tecnologias .container{
+    padding: 70px 12px;
+} /* Estilos del contenedor de la seccion tecnologias favoritas */
+
+#tecnologias h2{
+    margin-top: 0;
+    font-size: 3.2em;
+} /* Estilos de letras en la sección tecnologias favoritas */
+
+.logo {
+    width: 200px;
+} /* Estilo para las imágenes que hay dentro de las cards */
+
+.cards {
+    border: 2px solid black;
+    width: 300px; /* Ancho fijo para las tarjetas */
+    padding: 1em; /* Ajustar el relleno dentro de las tarjetas */
+    border-radius: 10px; /* Redondea el borde de la card */
+    transition: 1s; /* Le da un efecto a de transición a la tarjeta cuando se haga el hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em; /* Agregar margen entre las tarjetas */
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.1);
+} /* Estilos de los contonedores de las imágenes en la seccion tecnologias favoritas */
+
+.cards:hover {
+    background-color: #c2e5ef54;
+} /* Estilo del efecto cuando pasa el cursor por encima de la card */
+
+
+
+/* Actividades Favoritas */
+
+#actividades .container {
+    text-align: center;
+    padding: 100px 12px;
+} /* Estilo para alinear el form */
+
+#actividades h2 {
+    margin-bottom: 20px;
+    color: white;
+} /* Distancia del h2 con el formulario */
+
+#activity-form {
+    max-width: 600px;
+    margin: 0 auto;
+} /* Tamaño de los rectangulos del formulario */
+
+.form-group {
+    margin-bottom: 20px;
+} /* Formulario */
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+} /* Estilo del label del formulario */
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.2);
+} /* Inputs y text area del formulario */
+
+.form-group textarea {
+    resize: vertical;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+} /* Text area del form */
+
+button[type="submit"] {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: #e7ecef;
+    background-color: #001f54;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+} /* Boton */ 
+
+button[type="submit"]:hover {
+    background-color: #1282a2;
+} /* Sombreado del boton cuando se pasa el mouse por encima */
+
+.actfav-cont {
+    text-align: center;
+    padding: 0 12px;
+}
+
+#contenedor-actividades {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan a la siguiente línea */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    align-items: center;
+    gap: 20px; /* Agregar espacio entre las tarjetas */
+    padding: 20px; /* Ajustar el relleno alrededor del contenedor de tarjetas */
+    margin: auto;
+    max-width: 1200px;
+}
+
+
+/* Estilos de las tarjetas */
+.tarjeta {
+    border: 2px solid black;
+    width: 400px; /* Anchura fija */
+    background-color: rgb(30,30,30);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+}
+
+.tarjeta h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.5em;
+}
+
+/* Estilos de la imagen dentro de la card */
+#imgSize {
+    width: 364px;
+    height: 243px;
+}
+
+/* Estilos de la descripción dentro de la card */
+.tarjeta p {
+    margin: 10px 0;
+    color: white;
+    padding-bottom: 1em;
+    font-size:medium
+}
+
+.eliminatedCard {
+    width: 50px; /* Establece el ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(30,30,30);
+} /* Estilo del color de fondo del footer */
+
+footer p{
+    margin: 0;
+    padding: 25px;
+    color: white;
+} /* Estilo del texto del footer */
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} /* Estilo del contenedor del footer */
+
+
+
+
+
+
+/* Estilo responsive cuando el ancho de una ventana es de al menos 950 px */
+
+@media (min-width: 950px){
+
+/* Header */
+
+header{
+    position: fixed;
+    width: 100%;
+} /* Estilos generales del Header */
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+} /* Contenedor del header */
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+} /* Elementos dentro del nav en el header */
+
+
+
+/* Hero */
+
+#hero h1{
+    font-size: 5em;
+} /* Titulo principal de la sección hero */
+
+
+
+/* Fondo */
+
+.fondo {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url("/assets/img/fondo.jpeg");
+} /* Fondo de universo */
+
+
+
+/* Sobre mi */
+
+#sobre-mi .container{
+    display: flex;
+    justify-content: center;
+} /* Contenedor de la sección sobre mi */
+
+#sobre-mi .texto{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+} /* Texto en la seccion sobre mi */
+
+#sobre-mi h2{
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+} /* Titulo de la sección sobre mi */
+
+
+
+/* Tecnologias Favoritas */
+
+#tecnologias {
+    width: 95vw;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+} /* Estilo del contenedor de las tecnologias favoritas */
+
+#tecnologias .programas{
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} /* Estilo general en tecnologias favoritas */
+
+#tecnologias h2{
+    font-size: 4em;
+} /* Estilo de titulo en tecnologias favoritas */
+
+#tecnologias h3{
+    margin-top: 0.5em;
+} /* Estilo de un subtitulo en tecnologias favoritas */
+
+.logo {
+    width: 300px;
+    padding-bottom: 1em;
+} /* Estilo para las imágenes que hay dentro de las cards */
+
+.cards {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1em 1em 1em 1em;
+    border-radius: 10%;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+} /* Estilos de los contonedores de las imágenes en la seccion tecnologias favoritas */
+
+.cards:hover {
+    background-color: #c2e5ef54;
+} /* Estilo del efecto cuando pasa el cursor por encima de la card */
+
+
+
+/* Actividades Favoritas */
+
+#actividades .container {
+    text-align: center;
+    padding: 100px 12px;
+} /* Contenedor general del formulario en el apartado de actividades favoritas */
+
+#actividades h2 {
+    margin-bottom: 20px;
+} /* Distancia del h2 */
+
+#activity-form {
+    max-width: 600px;
+    margin: 0 auto;
+} /* Tamaño de los rectangulos del formulario */
+
+.form-group {
+    margin-bottom: 20px;
+} /* Formulario */
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+} /* Estilo del label del formulario */
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+} /* Inputs y text area del formulario */ 
+
+.form-group textarea {
+    resize: vertical;
+} /* Text area del form */
+
+button[type="submit"] {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: #e7ecef;
+    background-color: #001f54;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 4px 0 rgba(212, 212, 212, 0.3);
+} /* Boton */
+
+button[type="submit"]:hover {
+    background-color: #1282a2;
+} /* Sombreado del boton cuando se pasa el mouse por encima */
+
+
+
+/* Footer */
+
+footer .container{
+    justify-content: flex-end;
+} /* Estilo del contenedor del footer */
+
+}
+
+/* Estilo responsive cuando el ancho de una ventana es de al menos 1200 px */
+
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos móviles */
+    #contenedor-actividades {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #actividades{
+        background-position-x: calc(100vw - 800px);
+    } /* Posicion de las actividades a medida que crece la pantalla */
+
+}

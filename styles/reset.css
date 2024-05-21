@@ -1,0 +1,45 @@
+/* Reset CSS */
+
+/* Box-sizing border-box reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, figure, blockquote, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Set default font size and family */
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Set default line height */
+body, button, input, select, textarea {
+    line-height: 1.5;
+}
+
+/* Remove default button styles */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Remove default hyperlink styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
