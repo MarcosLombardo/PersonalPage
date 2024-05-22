@@ -20,11 +20,11 @@ On this occasion, a single page was created using HTML and CSS for the layout an
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/MarcosLombardo/TurnsPage.git
+   git clone https://github.com/MarcosLombardo/PersonalPage.git
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd TurnsPage
+   cd PersonalPage
 
 3. **Open file: 'index.html'**
    ```bash
