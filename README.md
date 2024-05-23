@@ -1,31 +1,31 @@
-# Activity Upload Page
+# Página de carga de actividades
 
-## Description
+## Descripción
 
-On this occasion, a single page was created using HTML and CSS for the layout and design, and JavaScript for the interactive functionality. The main functionality of this page is the ability to fill in a form and render the content in the form of activity cards, using the DOM to manipulate the representation.
+En esta ocasión, se ha creado una única página utilizando HTML y CSS para la maquetación y el diseño, y JavaScript para la funcionalidad interactiva. La principal funcionalidad de esta página es la posibilidad de rellenar un formulario y representar el contenido en forma de tarjetas de actividad, utilizando el DOM para manipular la representación.
 
-## Technologies Used
+## Tecnologías utilizadas
 
-- **HTML:** For the basic structure of the page.
-- **CSS:** For the design and visual layout of the elements.
-- **JavaScript:** To add interactivity and handle the rendering logic of the activity cards.
+- **HTML:** Para la estructura básica de la página.
+- **CSS:** Para el diseño y la disposición visual de los elementos.
+- **JavaScript:** Para añadir interactividad y manejar la lógica de renderizado de las tarjetas de actividad.
 
-## Functionalities
+## Funcionalidades
 
-- **Activity Form:** Allows users to enter details of the activity.
-- **Card Rendering:** The activities entered are displayed as interactive cards on the same page.
-- **DOM manipulation:** Using the DOM to dynamically add or remove activity cards.
+- **Formulario de actividad:** Permite a los usuarios introducir detalles de la actividad.
+- **Renderizado de tarjetas:** Las actividades introducidas se muestran como tarjetas interactivas en la misma página.
+- **Manipulación del DOM:** Uso del DOM para añadir o eliminar dinámicamente tarjetas de actividad.
 
-## How to Use
+## Cómo utilizarlo
 
-1. **Clone the Repository:**
+1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/MarcosLombardo/PersonalPage.git
 
-2. **Navigate to the Project Directory:**
+2. **Navegue hasta el directorio del proyecto:**
    ```bash
    cd PersonalPage
 
-3. **Open file: 'index.html'**
+3. **Abrir archivo: 'index.html'**
    ```bash
-   Open index.html in your browser to view and use the page.
+   Abra 'index.html' en su navegador para ver y utilizar la página.
